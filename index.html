@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mute</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="Collaborative text editor" name="description"/>
+    <meta content="initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <link href="../bower_components/angular-material/angular-material.css" rel="stylesheet"/>
+  </head>
+  <body layout="row" ng-app="mute">
+
+    <!-- Logo container-->
+    <div flex="35" layout="column">
+      <div flex>
+        <h1>Mute</h1>
+        <h2>"Multi-User Text Editor"</h2>
+      </div>
+      <div>
+        <span>
+          <a href="http://www.loria.fr/les-actus" target="_blank">Loria</a>
+          -
+          <a href="https://team.inria.fr/coast/" target="_blank">COAST team</a>
+        </span>
+      </div>
+    </div>
+
+    <!-- Files list container-->
+    <div flex="65" layout="column"></div>
+
+    <!-- Scripts -->
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+    <script src="./bower_components/angular-aria/angular-aria.js"></script>
+    <script src="./bower_components/angular-material/angular-material.js"></script>
+    <script>
+      angular.module('mute', ['ngMaterial']);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "name": "mute",
+  "version": "0.0.1",
+  "description": "Collaborative text editor",
+  "main": "app/app.module.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalitine/coeditore.git"
+  },
+  "keywords": [
+    "collaborate",
+    "cooperate",
+    "crdt",
+    "real-time",
+    "text",
+    "editor",
+    "multi-user"
+  ],
+  "author": "Philippe Kalitine <philippe.kalitine@gmail.com> (http://philippe.kalitine.name/)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kalitine/coeditore/issues"
+  },
+  "homepage": "https://github.com/kalitine/coeditore#readme",
+  "dependencies": {
+    "angular": "github:angular/bower-angular@^1.4.7",
+    "angular-animate": "github:angular/bower-angular-animate@^1.4.7",
+    "angular-aria": "github:angular/bower-angular-aria@^1.4.7",
+    "angular-material": "github:angular/bower-material@master"
+  },
+  "devDependencies": {
+    "commitizen": "2.4.4",
+    "cz-conventional-changelog": "1.1.4",
+    "jscs": "2.5.1"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
+  "jscsConfig": {
+    "present": "idiomatic"
+  }
+}

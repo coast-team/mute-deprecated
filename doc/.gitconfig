@@ -1,0 +1,12 @@
+[core]
+        autocrlf = input
+[pull]
+        rebase = true
+[push]
+        default = simple
+[rerere]
+        enabled = true
+[alias]
+        s = status -s
+        ls = log --oneline --decorate --all --graph
+        g = grep --break --heading --line-number
