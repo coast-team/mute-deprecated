@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Mute</title>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-    <meta content="Collaborative text editor" name="description"/>
-    <meta content="initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
-    <link href="../bower_components/angular-material/angular-material.css" rel="stylesheet"/>
-  </head>
-  <body layout="row" ng-app="mute">
 
-    <!-- Logo container-->
-    <div flex="35" layout="column">
-      <div flex>
-        <h1>Mute</h1>
-        <h2>"Multi-User Text Editor"</h2>
-      </div>
-      <div>
-        <span>
-          <a href="http://www.loria.fr/les-actus" target="_blank">Loria</a>
-          -
-          <a href="https://team.inria.fr/coast/" target="_blank">COAST team</a>
-        </span>
-      </div>
-    </div>
+<head>
+  <title>Mute</title>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta name="description" content="Collaborative text editor" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
 
-    <!-- Files list container-->
-    <div flex="65" layout="column"></div>
+<body ng-app="app" layout="column" class="ng-background">
 
-    <!-- Scripts -->
-    <script src="./bower_components/angular/angular.js"></script>
-    <script src="./bower_components/angular-animate/angular-animate.js"></script>
-    <script src="./bower_components/angular-aria/angular-aria.js"></script>
-    <script src="./bower_components/angular-material/angular-material.js"></script>
-    <script>
-      angular.module('mute', ['ngMaterial']);
-    </script>
-  </body>
+  <toolbar></toolbar>
+  <home></home>
+
+  <!-- Scripts -->
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script src="./bower_components/angular-aria/angular-aria.js"></script>
+  <script src="./bower_components/angular-material/angular-material.js"></script>
+
+  <script src="app/shared/toolbar/toolbar.module.js"></script>
+  <script src="app/shared/toolbar/toolbar.controller.js"></script>
+  <script src="app/shared/toolbar/toolbar.directive.js"></script>
+
+  <script src="app/components/home/home.module.js"></script>
+  <script src="app/components/home/home.directive.js"></script>
+  <script src="app/app.module.js"></script>
+</body>
+
 </html>
