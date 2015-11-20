@@ -11,6 +11,8 @@ Check Node version:
 
     which node
 
+---
+
 ## Install NodeJS packages
 
 The following packages are required for development. Install them globally:
@@ -23,6 +25,8 @@ The following packages are required for development. Install them globally:
 ## Application versioning
 
 The application follows the set of [Semantic Versioning](http://semver.org) rules when releasing a new version.
+
+---
 
 ## Git
 
@@ -41,19 +45,18 @@ Checkout `.gitconfig` file in this folder. To apply these configuration options,
 
 ### Commit message convention
 
-We are using [*Commitizen*](https://commitizen.github.io/cz-cli/) tool for structuring git commit messages.
+We are using [`commitizen`](https://commitizen.github.io/cz-cli/) tool and [`cz-conventional-changelog`] adapter for structuring git commit messages.
+
+---
 
 ## Code style
-
-> **"Arguments over style are pointless. There should be a style guide, and you should follow it."**
-*Rebecca Murphey*
 
 > **"Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."**
 *Idan Gazit*
 
-### JavaScript convention
+### JavaScript style guide
 
-[*Idiomatic*](https://github.com/rwaldron/idiomatic.js) has been chosen for the project.
+[Idiomatic](https://github.com/rwaldron/idiomatic.js) code style has been chosen for the project.
 
 ### AngularJS style guide
 
@@ -61,11 +64,13 @@ Checkout [AngularJS Style Guide](https://github.com/mgechev/angularjs-style-guid
 
 ### HTML/CSS style guide
 
-Actually there is no html/css convention which stand out more then others, but checkout [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.xml).
+Actually there is no html/css convention which stand out more then others, but checkout [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.xml). In Atom text editor `atom-beautify` package is responsible to format HTML files.
 
 ### SCSS style guide
 
-A great article about SCSS style guide is [here](https://css-tricks.com/sass-style-guide/).
+A great article about SCSS style guide is [here](https://css-tricks.com/sass-style-guide/). In Atom text editor `atom-beautify` package is responsible to format SCSS files.
+
+---
 
 ## Setting up Atom text editor
 
@@ -75,22 +80,22 @@ With some configurations and plugins Atom might be transformed into a real IDE. 
 
 Install the following plugins:
 
-[linter](https://atom.io/packages/linter)
+- [linter](https://atom.io/packages/linter)
 
-[linter-jshint](https://atom.io/packages/linter-jshint)
-: Check *Lint Inline Java Script* package option.
+- [linter-jshint](https://atom.io/packages/linter-jshint)
+  - Check *Lint Inline Java Script* package option.
 
-[linter-jscs](https://atom.io/packages/angularjs)
-: Check *Fix on save* package option.
+- [linter-jscs](https://atom.io/packages/angularjs)
+  - Check *Fix on save* package option.
 
-[sass-autocompile](https://atom.io/packages/sass-autocompile)
-: Set `../css/$1.css` for *Filename pattern for 'compressed' compiled files* package option.
+- [sass-autocompile](https://atom.io/packages/sass-autocompile)
+  - Set `../css/$1.css` for *Filename pattern for 'compressed' compiled files* package option.
 
-[atom-beautify](https://atom.io/packages/atom-beautify)
-: Check *Language Config - HTML - Beautify On Save* package option.
-: Check *Language Config - JSON - Beautify On save* package option.
-: Check *Language Config - SCSS - Beautify On save* package option.
-: Check *Language Config - JavaScript - Disable Beautifying Language* package option.
+- [atom-beautify](https://atom.io/packages/atom-beautify)
+  - Check *Language Config - HTML - Beautify On Save* package option.
+  - Check *Language Config - JSON - Beautify On save* package option.
+  - Check *Language Config - SCSS - Beautify On save* package option.
+  - Check *Language Config - JavaScript - Disable Beautifying Language* package option.
 
 [jsonlint](https://atom.io/packages/jsonlint)
 
