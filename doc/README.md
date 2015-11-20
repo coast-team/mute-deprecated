@@ -1,7 +1,24 @@
-# Table of contents
-[TOC]
-
 # Setting up development environment
+
+## Install NodeJS
+
+Install [Node Version Manager](https://github.com/creationix/nvm). Then execute:
+
+    nvm install 5.0
+    . ~/.bashrc
+
+Check Node version:
+
+    which node
+
+## Install NodeJS packages
+
+The following packages are required for development. Install them globally:
+
+    npm install -g htmlhint
+    npm install -g jscs
+    npm install -g live-server
+    npm install -g node-sass
 
 ## Application versioning
 
@@ -40,7 +57,7 @@ We are using [*Commitizen*](https://commitizen.github.io/cz-cli/) tool for struc
 
 ### AngularJS style guide
 
-Checkout [AngularJS Style Guide](https://github.com/mgechev/angularjs-style-guide). Another interesting resource is [AngularJS Best Practices](https://github.com/angular/angular.js/wiki/Best-Practices).
+Checkout [AngularJS Style Guide](https://github.com/mgechev/angularjs-style-guide). Another interesting resources are [AngularJS Best Practices](https://github.com/angular/angular.js/wiki/Best-Practices) and [Angular Style Guide](https://github.com/johnpapa/angular-styleguide).
 
 ### HTML/CSS style guide
 
@@ -59,17 +76,23 @@ With some configurations and plugins Atom might be transformed into a real IDE. 
 Install the following plugins:
 
 [linter](https://atom.io/packages/linter)
-: Base linter provider for Atom
 
 [linter-jshint](https://atom.io/packages/linter-jshint)
-: Flags JavaScript suspicious usage (it is a plugin for the `linter` plugin).
-: Check *Lint Inline Java Script* option setting.
+: Check *Lint Inline Java Script* package option.
 
 [linter-jscs](https://atom.io/packages/angularjs)
-: Flags *Idiomatic* code style errors.
+: Check *Fix on save* package option.
+
+[sass-autocompile](https://atom.io/packages/sass-autocompile)
+: Set `../css/$1.css` for *Filename pattern for 'compressed' compiled files* package option.
+
+[atom-beautify](https://atom.io/packages/atom-beautify)
+: Check *Language Config - HTML - Beautify On Save* package option.
+: Check *Language Config - JSON - Beautify On save* package option.
+: Check *Language Config - SCSS - Beautify On save* package option.
+: Check *Language Config - JavaScript - Disable Beautifying Language* package option.
 
 [jsonlint](https://atom.io/packages/jsonlint)
-: JSON linter.
 
 ### Recommended plugins
 
@@ -77,7 +100,6 @@ The following plugins might help you during development:
 
 - [angularjs](https://atom.io/packages/angularjs)
 - [autoclose-html](https://atom.io/packages/autoclose-html)
-- [atom-beautify](https://atom.io/packages/atom-beautify)
 - [minimap](https://atom.io/users/atom-minimap)
 - [file-icons](https://atom.io/packages/file-icons)
 - [pigments](https://atom.io/packages/pigments)
