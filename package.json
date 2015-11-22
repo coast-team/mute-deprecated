@@ -21,7 +21,7 @@
     "multi-user"
   ],
   "author": "Philippe Kalitine <philippe.kalitine@gmail.com> (http://philippe.kalitine.name/)",
-  "license": "GPL-3.0",
+  "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/kalitine/coeditore/issues"
   },
