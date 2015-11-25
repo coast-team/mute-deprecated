@@ -1,11 +1,3 @@
-(function() {
-  "use strict";
+export default function () {
 
-  angular
-    .module("app.toolbar")
-    .controller("Toolbar", Toolbar );
-
-  function Toolbar() {
-
-  }
-}());
+};

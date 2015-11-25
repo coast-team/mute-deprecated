@@ -1,5 +1,5 @@
-(function() {
-  "use strict";
+import directive from "./home.directive";
 
-  angular.module("app.home", []);
-}());
+export default angular
+  .module("mute.home", [])
+  .directive("home", directive ).name;

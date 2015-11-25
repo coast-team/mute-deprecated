@@ -1,3 +1,4 @@
 # Project dependences locations
 bower_components
 node_modules
+jspm_packages

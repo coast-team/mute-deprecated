@@ -7,29 +7,19 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta name="description" content="Collaborative text editor" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/app.css">
+  <meta name="theme-color" content="#9575CD" />
 </head>
 
-<body ng-app="app" layout="column" class="ng-background">
+<body layout="column" class="ng-background">
 
   <toolbar></toolbar>
   <home></home>
 
-  <!-- Scripts -->
-  <script src="./bower_components/angular/angular.js"></script>
-  <script src="./bower_components/angular-animate/angular-animate.js"></script>
-  <script src="./bower_components/angular-aria/angular-aria.js"></script>
-  <script src="./bower_components/angular-material/angular-material.js"></script>
-
-  <script src="app/shared/toolbar/toolbar.module.js"></script>
-  <script src="app/shared/toolbar/toolbar.controller.js"></script>
-  <script src="app/shared/toolbar/toolbar.directive.js"></script>
-
-  <script src="app/components/home/home.module.js"></script>
-  <script src="app/components/home/home.directive.js"></script>
-  <script src="app/app.module.js"></script>
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import("app/boot.js");
+  </script>
 </body>
 
 </html>

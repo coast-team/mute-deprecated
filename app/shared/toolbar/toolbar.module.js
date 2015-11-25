@@ -1,5 +1,7 @@
-(function() {
-  "use strict";
+import directive from "./toolbar.directive";
+import controller from "./toolbar.controller";
 
-  angular.module("app.toolbar", []);
-}());
+export default angular
+  .module("mute.toolbar", [])
+  .directive("toolbar", directive )
+  .controller("Toolbar", controller ).name;

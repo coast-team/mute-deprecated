@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kalitine/coeditore.git"
+    "url": "git+https://github.com/coast-team/mute.git"
   },
   "keywords": [
     "collaborate",
@@ -20,22 +20,31 @@
     "editor",
     "multi-user"
   ],
-  "author": "Philippe Kalitine <philippe.kalitine@gmail.com> (http://philippe.kalitine.name/)",
+  "author": "Philippe Kalitine <philippe.kalitine@gmail.com> (http://philippe.kalitine.name)",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/kalitine/coeditore/issues"
+    "url": "https://github.com/coast-team/mute/issues"
   },
-  "homepage": "https://github.com/kalitine/coeditore#readme",
-  "dependencies": {
-    "angular": "github:angular/bower-angular@^1.4.7",
-    "angular-animate": "github:angular/bower-angular-animate@^1.4.7",
-    "angular-aria": "github:angular/bower-angular-aria@^1.4.7",
-    "angular-material": "github:angular/bower-material@master"
+  "homepage": "https://github.com/coast-team/mute#readme",
+  "jspm": {
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.7",
+      "angular-animate": "github:angular/bower-angular-animate@^1.4.7",
+      "angular-aria": "github:angular/bower-angular-aria@^1.4.7",
+      "angular-material": "github:angular/bower-material@master",
+      "css": "github:systemjs/plugin-css@^0.1.6"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
   },
   "devDependencies": {
-    "commitizen": "2.4.4",
-    "cz-conventional-changelog": "1.1.4",
-    "jscs": "2.5.1"
+    "commitizen": "^2.4.4",
+    "cz-conventional-changelog": "^1.1.4",
+    "jscs": "^2.5.1",
+    "jspm": "^0.16.15"
   },
   "config": {
     "commitizen": {
