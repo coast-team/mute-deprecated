@@ -1,30 +1,37 @@
-home {
-  font-family: "Amatic SC";
-  font-weight: normal;
-  font-size: 1.5em;
+mute-home {
+  font-family: _font(family-heading);
+
   .logo {
-    font-family: "Amatic SC";
-    font-weight: bold;
-    font-size: 3.3em;
+
     h1 {
-      margin-bottom: 0;
+      font-size: 7em;
+      font-weight: bold;
+      margin-bottom: .2em;
+      margin-top: .4em;
     }
-    h2 {
-      margin-top: 0.2em;
-      span {
-        display: block;
-        font-size: 0.5em;
-        line-height: 2em;
-        &:first-child {
-          margin-left: 0.7em;
-        }
-        &:last-child {
-          margin-left: 2.2em;
-        }
+
+    h2 div {
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 1.5em;
+
+      &:first-child {
+        margin-left: .5em;
+      }
+
+      &:last-child {
+        margin-left: 1.2em;
       }
     }
   }
-  .document-list .document {
-    margin-bottom: 1.5em;
+
+  .docs {
+    overflow: auto;
+
+    md-whiteframe {
+      background-color: _palette(bg-alt);
+      margin-bottom: 1.2em;
+      padding: .6em 0 .6em .6em;
+    }
   }
 }

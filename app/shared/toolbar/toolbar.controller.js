@@ -1,3 +1,5 @@
-export default function () {
+class ToolbarController {
 
-};
+}
+
+export default ToolbarController;

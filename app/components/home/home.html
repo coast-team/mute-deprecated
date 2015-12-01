@@ -1,25 +1,36 @@
-<div layout="row">
-  <div class="logo" flex="25" hide layout-align="center center" layout="column" show-gt-lg>
-    <h1 flex-offset="5">MUTE</h1>
-    <h2 flex-offset="10">
-      <span>"Multi-User</span>
-      <span>Text Editor"</span>
-    </h2>
-  </div>
-  <div class="document-list" flex="75" layout-padding layout="column">
-    <h3 flex-offset-sm="5" flex-offset="15">Documents</h3>
-    <div flex-offset-sm="5" flex-offset="15">
-      <div layout-align="space-between start" layout-fill layout="column">
-        <div class="md-whiteframe-2dp document" flex>
-          TODO: main document
-        </div>
-        <div class="md-whiteframe-2dp document" flex>
-          Article about new architecture
-        </div>
-        <div class="md-whiteframe-2dp document" flex>
-          Another document
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<section class="logo" flex="30" layout="column" layout-align="start start" hide show-gt-sm>
+
+  <h1 flex-offset="10" class="md-display-4">MUTE</h1>
+  <h2 flex flex-offset="10">
+    <div class="md-display-3">"Multi-User</div>
+    <div class="md-display-3">Text Editor"</div>
+  </h2>
+
+</section>
+
+<section class="docs" flex layout="column" layout-align="start start">
+
+  <h3 class="md-headline">Documents</h3>
+  <section layout="column">
+    <md-whiteframe class="md-whiteframe-2dp">
+      <span class="md-title">TODO: main document</span>
+    </md-whiteframe>
+    <md-whiteframe class="md-whiteframe-2dp md-title" >
+      <span class="md-title">Article about new architecture</span>
+    </md-whiteframe>
+    <md-whiteframe class="md-whiteframe-2dp md-title" >
+      <span class="md-title">Another document</span>
+    </md-whiteframe>
+    <md-whiteframe class="md-whiteframe-2dp md-title" >
+      <span class="md-title">Another document</span>
+    </md-whiteframe>
+    <md-whiteframe class="md-whiteframe-2dp md-title" >
+      <span class="md-title">Another document</span>
+    </md-whiteframe>
+    <md-button class="md-fab md-primary" aria-label="Add">
+      <md-icon md-svg-src="assets/img/add.svg"></md-icon>
+    </md-button>
+  </section>
+
+
+</section>

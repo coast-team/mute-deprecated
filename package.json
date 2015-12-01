@@ -43,15 +43,16 @@
   "devDependencies": {
     "commitizen": "^2.4.4",
     "cz-conventional-changelog": "^1.1.4",
-    "jscs": "^2.5.1",
-    "jspm": "^0.16.15"
+    "jspm": "^0.16.15",
+    "eslint": "~1.10.1",
+    "eslint-config-airbnb": "~1.0.0",
+    "babel-eslint": "^4.1.6",
+    "eslint-plugin-angular": "~0.14.0",
+    "eslint-config-angular": "~0.4.0"
   },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
-  },
-  "jscsConfig": {
-    "preset": "idiomatic"
   }
 }

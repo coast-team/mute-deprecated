@@ -2,9 +2,9 @@
 
 ## Install NodeJS
 
-Install [Node Version Manager](https://github.com/creationix/nvm). Then execute:
+There are severals ways to install Node. We recommend install [Node Version Manager](https://github.com/creationix/nvm) and then execute:
 
-    nvm install 5.0
+    nvm install 5.1
     . ~/.bashrc
 
 Check Node version:
@@ -15,12 +15,29 @@ Check Node version:
 
 ## Install NodeJS packages
 
-The following packages are required for development. Install them globally:
+The following packages are required for the development. Install them globally:
 
+    npm install -g jspm
+    npm install -g eslint
     npm install -g htmlhint
-    npm install -g jscs
     npm install -g live-server
     npm install -g node-sass
+
+---
+
+## Install Ruby
+Debian family:
+
+    sudo apt-get install ruby
+
+
+---
+
+## Install Ruby gems
+
+    sudo gem install scss_lint
+
+---
 
 ## Application versioning
 
@@ -33,7 +50,7 @@ The application follows the set of [Semantic Versioning](http://semver.org) rule
 ### Configuration
 Required version: >=2.0
 
-Checkout `.gitconfig` file in this folder. To apply these configuration options, execute the following commands (with either `--global` or `--local` option. If you choose `--local` option then these commands should be executed in the project root directory):
+Checkout `.gitconfig` file in this folder. To apply these configuration options, execute the following commands (with either `--global` or `--local` option. If you choose `--local` option then they should be executed in the project root directory):
 
     git config --local core.autocrlf input
     git config --local pull.rebase true
@@ -56,11 +73,11 @@ We are using [`commitizen`](https://commitizen.github.io/cz-cli/) tool and [`cz-
 
 ### JavaScript style guide
 
-[Idiomatic](https://github.com/rwaldron/idiomatic.js) code style has been chosen for the project.
+[Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) code style has been chosen for the project plus a few changes are in `.eslintrc` file. Thanks to ESlint and Atom plugin , the code is checked both for style and errors in real-time, but yet checkout the style guide on github.
 
 ### AngularJS style guide
 
-Checkout [AngularJS Style Guide](https://github.com/mgechev/angularjs-style-guide). Another interesting resources are [AngularJS Best Practices](https://github.com/angular/angular.js/wiki/Best-Practices) and [Angular Style Guide](https://github.com/johnpapa/angular-styleguide).
+We follow [Angular Style Guide](https://github.com/johnpapa/angular-styleguide). You may also checkout [AngularJS Best Practices](https://github.com/angular/angular.js/wiki/Best-Practices).
 
 ### HTML/CSS style guide
 
@@ -68,7 +85,7 @@ Actually there is no html/css convention which stand out more then others, but c
 
 ### SCSS style guide
 
-A great article about SCSS style guide is [here](https://css-tricks.com/sass-style-guide/). In Atom text editor `atom-beautify` package is responsible to format SCSS files.
+[Scss-lint default configuration file](https://github.com/brigade/scss-lint/blob/master/config/default.yml) is extended by `.scss-lint.yml` file. A great article about SCSS style guide is [here](https://css-tricks.com/sass-style-guide/).
 
 ---
 
@@ -82,11 +99,7 @@ Install the following plugins:
 
 - [linter](https://atom.io/packages/linter)
 
-- [linter-jshint](https://atom.io/packages/linter-jshint)
-  - Check *Lint Inline Java Script* package option.
-
-- [linter-jscs](https://atom.io/packages/angularjs)
-  - Check *Fix on save* package option.
+- [linter-eslint](https://atom.io/packages/linter-eslint)
 
 - [sass-autocompile](https://atom.io/packages/sass-autocompile)
   - Set `../css/$1.css` for *Filename pattern for 'compressed' compiled files* package option.
@@ -94,10 +107,11 @@ Install the following plugins:
 - [atom-beautify](https://atom.io/packages/atom-beautify)
   - Check *Language Config - HTML - Beautify On Save* package option.
   - Check *Language Config - JSON - Beautify On save* package option.
-  - Check *Language Config - SCSS - Beautify On save* package option.
   - Check *Language Config - JavaScript - Disable Beautifying Language* package option.
 
-[jsonlint](https://atom.io/packages/jsonlint)
+- [linter-htmlhint](https://atom.io/packages/linter-htmlhint)
+
+- [jsonlint](https://atom.io/packages/jsonlint)
 
 ### Recommended plugins
 

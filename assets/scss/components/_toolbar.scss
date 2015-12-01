@@ -1,14 +1,15 @@
-toolbar {
+mute-toolbar {
+
+  md-input-container {
+    .md-input {
+      color: _palette(bg-alt);
+      text-align: right;
+    }
+  }
+
   md-icon {
     height: 36px;
     width: 36px;
-  }
-  .md-input,
-  .md-placeholder {
-    text-align: right;
-  }
-  .md-input {
-    width: 130px;
-    color: white;
+    margin: .2em;
   }
 }

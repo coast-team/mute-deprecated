@@ -10,10 +10,10 @@
   <meta name="theme-color" content="#9575CD" />
 </head>
 
-<body layout="column" class="ng-background">
+<body layout="column" layout-gt-sm="row" layout-align="stretch start">
 
-  <toolbar></toolbar>
-  <home></home>
+  <mute-toolbar flex="15" flex-order="1" flex-order-gt-sm="2"></mute-toolbar>
+  <mute-home flex="85" flex-order="2" flex-order-gt-sm="1" layout="row" layout-align="stretch start"></mute-home>
 
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>

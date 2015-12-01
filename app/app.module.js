@@ -1,5 +1,5 @@
 // Load the Angular Material CSS associated with ngMaterial
-// then load the main.css to provide overrides, etc.
+// then load the app.css to provide overrides, etc.
 import "angular-material/angular-material.css!";
 import "assets/css/app.css!";
 
@@ -11,19 +11,23 @@ import material from "angular-material";
 import toolbar from "./shared/toolbar/toolbar.module";
 import home from "./components/home/home.module";
 
-export default angular.module("mute", [ material, toolbar, home ])
-  .config( ( $mdThemingProvider, $mdIconProvider ) => {
-    let background = $mdThemingProvider.extendPalette( "grey", {
-      "A100": "f2f2f2"
-    });
+const MODULE_NAME = "mute";
 
-    $mdThemingProvider
-      .definePalette("background", background )
-      .theme("default")
-      .primaryPalette("deep-purple")
-      .accentPalette("grey")
-      .backgroundPalette("background");
+angular
+  .module(MODULE_NAME, [
+    material,
+    toolbar,
+    home,
+  ])
+  .config(config);
 
-    $mdIconProvider
-      .iconSet("flaticon", "assets/fonts/continuous/flaticon.svg");
-  }).name;
+config.$inject = ["$mdThemingProvider"];
+
+function config($mdThemingProvider) {
+  $mdThemingProvider
+    .theme("default")
+    .primaryPalette("deep-purple")
+    .accentPalette("grey");
+}
+
+export default MODULE_NAME;

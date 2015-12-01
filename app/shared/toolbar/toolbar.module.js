@@ -1,7 +1,12 @@
-import directive from "./toolbar.directive";
-import controller from "./toolbar.controller";
+import angular from "angular";
+import toolbar from "./toolbar.directive";
+import ToolbarController from "./toolbar.controller";
 
-export default angular
-  .module("mute.toolbar", [])
-  .directive("toolbar", directive )
-  .controller("Toolbar", controller ).name;
+const MODULE_NAME = "mute.toolbar";
+
+angular
+  .module(MODULE_NAME, [])
+  .directive("muteToolbar", toolbar.directiveFactory )
+  .controller("ToolbarController", ToolbarController );
+
+export default MODULE_NAME;

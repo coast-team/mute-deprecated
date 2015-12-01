@@ -1,5 +1,10 @@
-import directive from "./home.directive";
+import angular from "angular";
+import home from "./home.directive";
 
-export default angular
-  .module("mute.home", [])
-  .directive("home", directive ).name;
+const MODULE_NAME = "mute.home";
+
+angular
+  .module(MODULE_NAME, [])
+  .directive("muteHome", home.directiveFactory );
+
+export default MODULE_NAME;
