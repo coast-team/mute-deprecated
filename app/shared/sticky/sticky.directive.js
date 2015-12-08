@@ -7,10 +7,10 @@ class	Sticky {
     LOG.set(this, $log);
     COMPILE.set(this, $compile);
     MD_STICKY.set(this, $mdSticky);
-    this.restrict = "A";
+    this.restrict = 'A';
     this.replace = true;
     this.transclude = true;
-    this.template = "<div class='mute-sticky-content'></div>";
+    this.template = '<div class="mute-sticky-content"></div>';
     this.compile = this.link;
   }
 
@@ -24,7 +24,7 @@ class	Sticky {
       });
 
       transclude(scope, function (clone) {
-        let stickyClone = COMPILE.get(Sticky.instance)(angular.element(outerHTML).removeAttr("mute-sticky"))(scope);
+        let stickyClone = COMPILE.get(Sticky.instance)(angular.element(outerHTML).removeAttr('mute-sticky'))(scope);
         stickyClone.append(clone);
         MD_STICKY.get(Sticky.instance)(scope, element, stickyClone);
       });

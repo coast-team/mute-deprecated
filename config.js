@@ -28,6 +28,9 @@ System.config({
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "bramski/angular-indexedDB": "github:bramski/angular-indexedDB@1.1.3",
+    "coast-team/mute-client": "github:coast-team/mute-client@master",
+    "coast-team/mute-structs": "github:coast-team/mute-structs@master",
+    "coast-team/mute-utils": "github:coast-team/mute-utils@master",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
     "bower:angular-indexed-db@1.1.3": {

@@ -67,13 +67,13 @@ $vendor-values: (
 /// @return {string} Updated string.
 @function str-replace($string, $search, $replace: '') {
 
-	$index: str-index($string, $search);
+  $index: str-index($string, $search);
 
-	@if $index {
+  @if $index {
 		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
 	}
 
-	@return $string;
+  @return $string;
 
 }
 
@@ -84,11 +84,11 @@ $vendor-values: (
 /// @return {list} Updated list of strings.
 @function str-replace-all($strings, $search, $replace: '') {
 
-	@each $string in $strings {
-		$strings: set-nth($strings, index($strings, $string), str-replace($string, $search, $replace));
+  @each $string in $strings {
+  	$strings: set-nth($strings, index($strings, $string), str-replace($string, $search, $replace));
 	}
 
-	@return $strings;
+  @return $strings;
 
 }
 

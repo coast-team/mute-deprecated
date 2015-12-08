@@ -24,7 +24,7 @@ class HomeController {
     }
     id++;
 
-    STORAGE.get(this).putDoc(id, "Unknown", new Date().toLocaleString(), () => {
+    STORAGE.get(this).putDoc(id, 'Unknown', new Date().toLocaleString(), () => {
       WINDOW.get(this).location.href = `/#/${id}`;
     });
   }
@@ -42,6 +42,6 @@ class HomeController {
   }
 }
 
-HomeController.$inject = [ "$window", "storage"];
+HomeController.$inject = [ '$window', 'storage'];
 
 export default HomeController;

@@ -2,7 +2,7 @@ const LOCAL = new WeakMap();
 const INDEXED_DB = new WeakMap();
 
 const defaults = {
-  userName: "Anonymous",
+  userName: 'Anonymous',
   docs: [],
 };
 
@@ -14,15 +14,15 @@ class Storage {
   }
 
   getUserName() {
-    return LOCAL.get(this).get("userName") || defaults.userName;
+    return LOCAL.get(this).get('userName') || defaults.userName;
   }
 
   setUserName(userName) {
-    return LOCAL.get(this).set("userName", userName);
+    return LOCAL.get(this).set('userName', userName);
   }
 
   getDocList(callback) {
-    INDEXED_DB.get(this).openStore("docs", (store) => {
+    INDEXED_DB.get(this).openStore('docs', (store) => {
       store
         .getAll()
         .then(callback);
@@ -34,7 +34,7 @@ class Storage {
   }
 
   putDoc(id, title, created, callback) {
-    INDEXED_DB.get(this).openStore("docs", (store) => {
+    INDEXED_DB.get(this).openStore('docs', (store) => {
       store
         .insert({id, title, created})
         .then(callback);
@@ -42,7 +42,7 @@ class Storage {
   }
 
   removeDoc(id, callback) {
-    INDEXED_DB.get(this).openStore("docs", (store) => {
+    INDEXED_DB.get(this).openStore('docs', (store) => {
       store
         .delete(id)
         .then(callback);
@@ -54,6 +54,6 @@ class Storage {
   }
 }
 
-Storage.serviceFactory.$inject = ["localStorageService", "$indexedDB"];
+Storage.serviceFactory.$inject = ['localStorageService', '$indexedDB'];
 
 export default Storage;

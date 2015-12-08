@@ -39,6 +39,9 @@
       "angular-route": "github:angular/bower-angular-route@^1.4.8",
       "angular-ui-ace": "bower:angular-ui-ace@^0.2.3",
       "bramski/angular-indexedDB": "github:bramski/angular-indexedDB@^1.1.3",
+      "coast-team/mute-client": "github:coast-team/mute-client@master",
+      "coast-team/mute-structs": "github:coast-team/mute-structs@master",
+      "coast-team/mute-utils": "github:coast-team/mute-utils@master",
       "css": "github:systemjs/plugin-css@^0.1.6"
     },
     "devDependencies": {

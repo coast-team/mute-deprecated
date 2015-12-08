@@ -1,14 +1,14 @@
 // This comment line is mandatory for sass-autocompile Atom package (Do not remove it).
-@import "libs/vars";
-@import "libs/functions";
-@import "libs/mixins";
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
-@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 
 // Components
-@import "components/home";
-@import "components/toolbar";
-@import "components/editor";
+@import 'components/home';
+@import 'components/toolbar';
+@import 'components/editor';
 
 body {
   background-color: _palette(bg);

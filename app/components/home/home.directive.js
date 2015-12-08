@@ -1,7 +1,7 @@
 class Home {
   constructor() {
-    this.restrict = "E";
-    this.templateUrl = "app/components/home/home.html";
+    this.restrict = 'E';
+    this.templateUrl = 'app/components/home/home.html';
   }
 
   static directiveFactory() {

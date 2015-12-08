@@ -7,9 +7,9 @@ class DocService {
   }
 
   create(docID) {
-    console.log("Doc Service: create function");
+    console.log('Doc Service: create function');
     return 0;
-    //return HTTP.get(this).post("/createDoc", {docID});
+    //return HTTP.get(this).post('/createDoc', {docID});
   }
 
   static serviceFactory($http) {
@@ -17,6 +17,6 @@ class DocService {
   }
 }
 
-DocService.serviceFactory.$inject = ["$http"];
+DocService.serviceFactory.$inject = ['$http'];
 
 export default DocService;

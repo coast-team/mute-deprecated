@@ -1,10 +1,10 @@
-import material from "angular-material";
-import muteSticky from "./sticky.directive";
+import material from 'angular-material';
+import muteSticky from './sticky.directive';
 
-const MODULE_NAME = "app.sticky";
+const MODULE_NAME = 'app.sticky';
 
 angular
   .module(MODULE_NAME, [material])
-  .directive("mute-Sticky", muteSticky.directiveFactory);
+  .directive('mute-Sticky', muteSticky.directiveFactory);
 
 export default MODULE_NAME;
