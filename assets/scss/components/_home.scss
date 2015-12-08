@@ -1,4 +1,4 @@
-mute-home {
+.home {
   font-family: _font(family-heading);
 
   .logo {
@@ -26,12 +26,16 @@ mute-home {
   }
 
   .docs {
-    overflow: auto;
-
     md-whiteframe {
+      @include vendor('transition', 'all .2s ease');
       background-color: _palette(bg-alt);
+      color: inherit;
+      cursor: pointer;
+      font-family: _font(family-body);
+      height: 48px;
       margin-bottom: 1.2em;
-      padding: .6em 0 .6em .6em;
+      padding: 0 0 0 .5em;
+      text-decoration: none;
     }
   }
 }

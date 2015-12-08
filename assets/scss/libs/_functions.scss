@@ -1,4 +1,3 @@
-div {}
 
 /// Gets a font value.
 /// @param {string} $keys Key(s).
@@ -12,4 +11,11 @@ div {}
 /// @return {string} Value.
 @function _palette($key) {
   @return map-get($palette, $key);
+}
+
+/// Gets a duration value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _duration($keys...) {
+  @return val($duration, $keys...);
 }

@@ -1,0 +1,15 @@
+.doc {
+  .title {
+    md-input-container {
+      .md-input {
+        font-family: _font(family-body);
+      }
+    }
+
+    md-icon {
+      height: 36px;
+      width: 36px;
+      margin: .2em;
+    }
+  }
+}

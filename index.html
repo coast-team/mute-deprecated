@@ -10,10 +10,14 @@
   <meta name="theme-color" content="#9575CD" />
 </head>
 
-<body layout="column" layout-gt-sm="row" layout-align="stretch start">
+<body layout="row" layout-align="start stretch">
 
-  <mute-toolbar flex="15" flex-order="1" flex-order-gt-sm="2"></mute-toolbar>
-  <mute-home flex="85" flex-order="2" flex-order-gt-sm="1" layout="row" layout-align="stretch start"></mute-home>
+  <md-content flex layout="column" layout-gt-sm="row" layout-align="start stretch">
+    <mute-toolbar flex-order="1" flex-order-gt-sm="2" flex="100" flex-gt-sm="15"></mute-toolbar>
+    <div flex-order="2" flex-order-gt-sm="1" flex="100" flex-gt-sm="85" layout="row" layout-align="start stretch" layout-wrap>
+      <div ng-view flex="100" layout="row" layout-align="none stretch" class="main-view"></div>
+    </div>
+  </md-content>
 
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>

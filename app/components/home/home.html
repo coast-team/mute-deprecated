@@ -1,36 +1,42 @@
-<section class="logo" flex="30" layout="column" layout-align="start start" hide show-gt-sm>
+<div flex="100" class="home" layout="row" layout-align="start start">
 
-  <h1 flex-offset="10" class="md-display-4">MUTE</h1>
-  <h2 flex flex-offset="10">
-    <div class="md-display-3">"Multi-User</div>
-    <div class="md-display-3">Text Editor"</div>
-  </h2>
+  <div class="logo" flex-gt-sm="30" layout="column" layout-align="start center" hide show-gt-sm>
 
-</section>
+    <h1 class="md-display-4">MUTE</h1>
+    <h2>
+      <div class="md-display-3">"Multi-User</div>
+      <div class="md-display-3">Text Editor"</div>
+    </h2>
 
-<section class="docs" flex layout="column" layout-align="start start">
+  </div>
 
-  <h3 class="md-headline">Documents</h3>
-  <section layout="column">
-    <md-whiteframe class="md-whiteframe-2dp">
-      <span class="md-title">TODO: main document</span>
-    </md-whiteframe>
-    <md-whiteframe class="md-whiteframe-2dp md-title" >
-      <span class="md-title">Article about new architecture</span>
-    </md-whiteframe>
-    <md-whiteframe class="md-whiteframe-2dp md-title" >
-      <span class="md-title">Another document</span>
-    </md-whiteframe>
-    <md-whiteframe class="md-whiteframe-2dp md-title" >
-      <span class="md-title">Another document</span>
-    </md-whiteframe>
-    <md-whiteframe class="md-whiteframe-2dp md-title" >
-      <span class="md-title">Another document</span>
-    </md-whiteframe>
-    <md-button class="md-fab md-primary" aria-label="Add">
-      <md-icon md-svg-src="assets/img/add.svg"></md-icon>
-    </md-button>
-  </section>
+  <div class="docs" flex flex-gt-sm="70" layout="row" layout-align="center start" layout-wrap>
+      <h3 flex="90" class="md-display-1">Documents</h3>
 
+    <div flex="90" layout="row" layout-align="center stretch" layout-wrap>
 
-</section>
+      <div flex="100">
+        <md-whiteframe flex layout="row" class="md-whiteframe-2dp md-title"
+          ng-click="ctrl.gotoDoc(doc.id)"
+          ng-class="hover"
+          ng-repeat="doc in ctrl.docs"
+          ng-mouseover="hover='md-whiteframe-8dp'"
+          ng-mouseleave="hover=''">
+          <span flex="85" layout="row" layout-align="start center">
+            <span class="md-title">{{doc.id}} | {{doc.title}}</span>
+            <span class="md-title">{{doc.created}}</span>
+          </span>
+          <span flex="15" layout="row" layout-align="end center">
+             <md-button ng-show="hover == 'md-whiteframe-8dp'" ng-click="ctrl.removeDoc($event, doc.id);">remove</md-button>
+          </span>
+        </md-whiteframe>
+      </div>
+
+      <div flex="100" layout="row" layout-align="end center">
+        <md-button class="md-fab" aria-label="Add" ng-click="ctrl.createDoc()">
+          <md-icon md-svg-src="assets/img/add.svg"></md-icon>
+        </md-button>
+      </div>
+    </div>
+  </div>
+</div>

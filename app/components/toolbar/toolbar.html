@@ -1,0 +1,8 @@
+<md-toolbar class="md-whiteframe-z4" ng-controller="ToolbarController as toolbar">
+  <div layout="row" layout-align="end center" layout-margin>
+    <md-input-container class="md-block">
+      <input ng-model="toolbar.userName" type="text" ng-required="true" aria-label="User name" ng-blur="toolbar.saveUserName();"/>
+    </md-input-container>
+    <md-icon aria-label="User" md-svg-src="assets/img/flaticon/user160.svg"></md-icon>
+  </div>
+</md-toolbar>

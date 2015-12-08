@@ -10,22 +10,40 @@ System.config({
   },
   paths: {
     "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
+    "npm:*": "jspm_packages/npm/*",
+    "bower:*": "jspm_packages/bower/*"
   },
 
   map: {
+    "ace-builds": "bower:ace-builds@1.2.2",
+    "ajaxorg/ace": "github:ajaxorg/ace@1.2.2",
     "angular": "github:angular/bower-angular@1.4.8",
     "angular-animate": "github:angular/bower-angular-animate@1.4.8",
     "angular-aria": "github:angular/bower-angular-aria@1.4.8",
+    "angular-indexed-db": "bower:angular-indexed-db@1.1.3",
+    "angular-local-storage": "npm:angular-local-storage@0.2.2",
     "angular-material": "github:angular/bower-material@master",
+    "angular-route": "github:angular/bower-angular-route@1.4.8",
+    "angular-ui-ace": "bower:angular-ui-ace@0.2.3",
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
+    "bramski/angular-indexedDB": "github:bramski/angular-indexedDB@1.1.3",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
+    "bower:angular-indexed-db@1.1.3": {
+      "angular": "bower:angular@1.3.20"
+    },
+    "bower:angular-ui-ace@0.2.3": {
+      "ace-builds": "bower:ace-builds@1.2.2",
+      "angular": "bower:angular@1.4.8"
+    },
     "github:angular/bower-angular-animate@1.4.8": {
       "angular": "github:angular/bower-angular@1.4.8"
     },
     "github:angular/bower-angular-aria@1.4.8": {
+      "angular": "github:angular/bower-angular@1.4.8"
+    },
+    "github:angular/bower-angular-route@1.4.8": {
       "angular": "github:angular/bower-angular@1.4.8"
     },
     "github:angular/bower-material@master": {

@@ -2,7 +2,8 @@ mute-toolbar {
 
   md-input-container {
     .md-input {
-      color: _palette(bg-alt);
+      font-family: _font(family-body);
+      //color: _palette(bg-alt);
       text-align: right;
     }
   }
